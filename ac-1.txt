@@ -6,16 +6,17 @@ e responda às seguintes questões:
 
 1. No estudo dos autores, qual foi a proporção de projetos de software que falharam? Esse valor é confiável?
 
-	Resposta:
+	Resposta: Os autores receberam o questionário de 304 projetos, entre esses apenas 235 foram adotados. Entre os 235 projetos, 70 foram considerados como
+falhas. Este valor não é confiável pois a política de muitas companhias não permite que o gerente de projeto admita a falha de um projeto. 
 
 
 
 2. A figura 1 apresenta os principais fatores de falhas em projetos de software e relações entre eles, mas não dá nome para essas relações. Escolha dois fatores que estejam relacionados e discuta qual a relação que você acha que existe entre elas, justificando sua resposta.
 
-	Resposta:
+	Resposta: Os fatores "Customer had unrealistic expectations" e "Delivery date impacted develop process" estão ligados pois uma vez que o cliente tem expectativas irrealistas sobre o projeto, ele pode não ter conhecimento sobre a complexidade do software em questão e assim exigir uma entrega incompatível com a demanda de tempo do desenvolvimento, sobrecarregando os desenvolvedores.
 
 
 
 3. Qual é a sugestão dos autores para que futuros projetos de software fracassem menos, e como essa sugestão ajudaria a melhorar os novos projetos?
 
-	Resposta:
+	Resposta:Como a maioria dos projetos fracassam pelos mesmos motivos, os autores sugerem que os erros sejam aprendidos com os fracassos, e para isso incentivam que as organizações façam revisões sobre os projetos fracassados.
