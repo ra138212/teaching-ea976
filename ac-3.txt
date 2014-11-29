@@ -1,10 +1,11 @@
 *** AC3 ***  (deadline: 05/Out/2014 23:59)
 
-1.- Git push + git pull request of one standards-based requirements document of your choice.
-2.- Git push + git pull request this file marking with Y (yes) or N (no) if the chosen requirements documents includes the given chapters and the notation elements used.
+1.- Git push + git pull request of one standards-based requirements document of your choice. 
+2.- Git push + git pull request this file (ac-3.txt) marking with Y (yes) or N (no) if the chosen requirements documents includes the given chapters and the notation elements used.
 
 ### Structure of a requirements document 
 
+<<<<<<< HEAD
 Y/N : Preface				Y
 Y/N : Introduction			Y
 Y/N : Glossary				Y
@@ -16,6 +17,19 @@ Y/N : System evolution			N
 Y/N : Appendices			Y
 Y/N : Index				Y
 
+=======
+Y/N : Preface
+Y/N : Introduction
+Y/N : Glossary
+Y/N : User requirements definition
+Y/N : System architecture
+Y/N : System requirements specification
+Y/N : System models
+Y/N : System evolution
+Y/N : Appendices
+Y/N : Index
+(Y/N : Histórico de Alterações do Documento) 
+>>>>>>> upstream/master
 
 ### Notation
 Y/N : Natural language			Y
