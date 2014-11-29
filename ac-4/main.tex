@@ -27,7 +27,6 @@
 %\title{Relatório Atividade Complementar FLOSS EA976}
 %
 %%% Preamble
-
 \documentclass[12pt,a4paper]{article} % Use A4 paper with a 12pt font size - different paper sizes will require manual recalculation of page margins and border positions
 
 \usepackage{marginnote} % Required for margin notes
@@ -37,12 +36,12 @@
 \usepackage{amsmath} % Required for equation customization
 \usepackage{amssymb} % Required to include mathematical symbols
 \usepackage{xcolor} % Required to specify colors by name
-
+\usepackage[utf8]{inputenc}
 \usepackage{fancyhdr} % Required to customize headers
 \usepackage[brazil]{babel}
 \usepackage[latin1]{inputenc}
 %\usepackage[T1]{fontenc}
-\usepackage{graphicx}
+%\usepackage{graphicx}
 \usepackage{pstricks}
 \usepackage{subfigure}
 \usepackage{caption}  % legendas nas figuras
@@ -72,9 +71,9 @@
 
 \fancyhead[L]{\begin{tabular}{l r | l r} % The header is a table with 4 columns
 \textbf{2S/2014} & EA976 & \textbf{P\'agina:} & \thepage/\pageref{LastPage} \\ % Project name and page count
-\textbf{Atividade:} & Complementar \#4 & \textbf{Data:} & 27/10/14 \\ % Job number and last updated date
-\textbf{Professor:} & Christian E. Rothenberg & \textbf{Assunto:} & Caracterização  projeto \textit{open source}  \\ % Version and reviewed date
-\textbf{Projeto:} & Nome projeto open source & \textbf{Autor:} & Nome Aluno (RA: XXXXXX) \\ % Designer and reviewer
+\textbf{Atividade:} & Complementar \#4 & \textbf{Data:} & 30/11/14 \\ % Job number and last updated date
+\textbf{Professor:} & Christian E. Rothenberg & \textbf{Assunto:} & Caracterização  projeto \textit{open source} Debian  \\ % Version and reviewed date
+\textbf{Projeto:} & Debian & \textbf{Autor:} & Daniel Meneguin Barbosa (RA: 138212) \\ % Designer and reviewer
 \end{tabular}}
 
 %----------------------------------------------------------------------------------------
@@ -87,20 +86,16 @@
 %	DOCUMENT CONTENT
 %----------------------------------------------------------------------------------------
 
-\section{Relat\'orio t\'ecnico descritivo sobre projeto de código livre} 
+\section{Relat\'orio t\'ecnico descritivo sobre projeto de c\'odigo livre} 
 
-Este modelo reduzido visa proporcionar um roteiro pr\'atico para a reda\,c\~ao do relatório da atvidade complementar \#4, na forma de relat\'orio simplificado. 
-
-Esta se\,c\~ao \'e destinada a apresentar os objetivos do trabalho.\\
+	Este relatório é uma apresentação ao projeto open source Debian e suas características relacionadas ao desenvolvimento, licença, governança e manutenção.
 
 \subsection{Descrição do projeto}
 
-Descreva brevemente o tipo de software desenvolvido no projeto, para que serve, quem usa, etc.
-
+	O projeto Debian é um software livre que consiste em um sistema operacional baseado no kernel Linux utilizado por empresas e indivíduos.
 
 
 \section{Caracterização do projeto de código livre} 
-Pesquise sobre o projeto para responder as seguintes questões.
 
 
 \subsection{Desenvolvimento}
@@ -108,11 +103,37 @@ Pesquise sobre o projeto para responder as seguintes questões.
 
 \begin{itemize}
 \item Existe um local dedicado para o desenvolvimento?
+\\*
+	\\Não. A estrutura na qual os desenvolvedores são organizados permite que não seja necessária a alocação física dos mesmos para o desenvolvimento do sistema operacional. A comunicação é feita através de listas de email (https://lists.debian.org) e canal de IRC (canal \#debian em irc.debian.org). https://www.debian.org/intro/organization. A localização dos desenvolvedores pode ser verificada neste link: https://www.debian.org/devel/developers.loc
+\linebreak
 \item É possível extrair o atual código fonte a partir de um repositório público de código fonte?
+
+\\*
+	\\Sim. Existe um repositório mantido por membros da Debian onde o código pode ser baixado via ftp. Segue o link do repositório: https://ftp-master.debian.org/
+\linebreak
+
 \item Quão grande é o código?
+
+\\*
+\\A última versão estável do Debian (7.0) possui 419 milhões de linhas de código.
+\linebreak
+
 \item Quais são as principais linguagens de programação?
+\\*
+\\As linguagens mais utilizadas são C e C++. No link a seguir podem ser verificadas 15 linguagens de programação utilizadas no desenvolvimento do Debian: https://wiki.debian.org/ProgrammingLanguage
+\linebreak
+
 \item A utilização do pacote depende de algum outro software proprietário ou de código fonte aberto?
+
+\\*
+\\A utilização do Debian como sistema operacional depende de vários softwares de terceiros que por muitas vezes são proprietários ou possuem código fonte aberto. O desenvolvimento do Debian busca dar suporte a todos estes, como informa o link a seguir na sessão “É tudo realmente livre?”: https://www.debian.org/intro/about
+\linebreak
+
 \item É possível calcular o número de \textit{downloads} ou usuários de uma versão em particular?
+\\*
+\\Devido ao grande número de mirrors e diferentes formas de compartilhamento das versões do Debian, não é possível calcular a quantidade de downloads realizados de suas versões.
+\linebreak
+
 \end{itemize}
 
 \subsection{Licença Software Livre}
@@ -120,9 +141,24 @@ Pesquise sobre o projeto para responder as seguintes questões.
 
 \begin{itemize}
 \item Quem são os patrocinadores que contribuem para a sustentabilidade do projeto?
+\\*
+\\Os principais patrocinadores do desenvolvimento do projeto são: Software in the public interest (SPI) e Umbrella organization. Mas existem muitas outras como Hewlett-Packard, trustsec , credativ GmbH, Skolelinux, Genesi, MGE UPS SYSTEMS, Simtec etc. (uma lista completa pode ser encontrada neste link: https://www.debian.org/partners/)
+\linebreak
+
+
 \item Quem detém os direitos autorais do código?
+\\*
+\\Quem detém os direitos autorais de cada pacote do Debian é o próprio autor de cada pacote.
+\linebreak
 \item O projeto está sob qual tipo de licença de código aberto?
+\\*
+\\O Debian é um Software Livre e o autor de cada pacote pode utilizar a licença que desejar, porém apenas os pacotes com licenças que respeitam o Contrato Social Debian (https://www.debian.org/social_contract) entram na distribuição principal.
+\linebreak
+
 \item Por que os responsáveis pelo projeto escolheram a licença de código aberto?
+\\*
+\\A licença GPL prevê que qualquer trabalho derivado deve estar sob as mesmas condições que o trabalho original. O Debian foi baseado no Kernel Linux que está sob licença GPL, portanto, uma vez que o Debian foi derivado do Linux, é obrigatório que seu código seja aberto.
+\linebreak
 \end{itemize}
 
 \subsection{Governança}
@@ -130,8 +166,17 @@ Pesquise sobre o projeto para responder as seguintes questões.
 
 \begin{itemize}
 \item Existem quantos desenvolvedores alocados para o projeto?
+\\*
+\\O Debian é produzido por aproximadamente mil desenvolvedores ativos espalhados pelo mundo.
+\linebreak
 \item Quantos \textit{committers}, também conhecidos por desenvolvedores que podem realizar mudanças propostas, o projeto possui?
+\\*
+\\Os “comitters” do Debian são chamados de “Sponsors” e um Sponsor pode ser qualquer desenvolvedor Debian. Portanto, existem aproximadamente mil pessoas que podem realizar mudanças na versão oficial.
+\linebreak
 \item O que você pode dizer sobre o modelo de governança de código fonte aberto?
+\\*
+\\O Debian possui uma estrutura organizacional muito bem organizada. O líder do projeto é eleito uma vez por ano pela comunidade de desenvolvedores. Este possui mais poderes que os outros e podem tomar decisões levando em conta critérios técnicos e o consenso da comunidade. A comunidade pode também rever uma decisão tomada pelo líder e cada decisão é votada por todos.
+\linebreak
 \end{itemize}
 
 \subsection{Manutenção}
@@ -139,10 +184,27 @@ Pesquise sobre o projeto para responder as seguintes questões.
 
 \begin{itemize}
 \item Gerenciamento de \textit{releases}: Qual o número e frequência de \textit{releases}?
+\\*
+\\ocorreram 12 releases do Debian. A frequência média é de uma release a cada dois anos.
+\linebreak
 \item Comunicação: Existe um canal de comunicação útil e ativo para a comunidade / suporte ao usuário?
+\\*
+\\A comunicação é feita primariamente através de e-mail (listas de discussão em https://lists.debian.org) e IRC (canal #debian em irc.debian.org).
+\linebreak
 \item Existe um \textit{bugtracker} (rastreamento de bugs) com uma lista de bugs corrigidos/pendentes de correção?
+\\*
+\\Sim. Existe uma lista que contem os bugs, estes são associados a um número e é mantido no arquivo até que seja marcado como tendo sido trabalhado. Esta lista pode ser encontrada neste link: https://www.debian.org/Bugs/
+\linebreak
 \item Existe um plano de metas para planos futuros? Existe evidência que o plano de metas foi utilizado no passado?
+\\*
+\\Cada versão do Debian possui uma página de status que se aproxima de um plano de metas. Esta página existe inclusive na próxima versão que será lançada (codinome Jessie: https://www.debian.org/releases/jessie/)
+\linebreak
+
 \item Existe consultoria comercial, treinamento ou consulta disponível para o projeto? A partir de múltiplos prestadores de serviços?         
+\\*
+\\Existe uma lista de consultores localizados por todo o mundo disponíveis para o desenvolvimento de funcionalidades extras para o Debian. Esta lista pode ser encontrada no seguinte link: https://www.debian.org/consultants/
+\linebreak
+
 \end{itemize}
         
 
